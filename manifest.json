@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Copy URLs in current Chrome Window to Clipboard",
+  "version": "1.0",
+  "icons": {
+    "16": "images/export16px.png",
+    "32": "images/export32px.png",
+    "48": "images/export48px.png",
+    "128": "images/export128px.png"
+  },
+  "background": {
+    "service_worker": "copyUrls.js"
+  },
+  "host_permissions": [
+    "https://*/*"
+  ],
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "clipboardRead",
+    "clipboardWrite"
+  ]
+}

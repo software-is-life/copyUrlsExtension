@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "test": "jest"
+  },
+  "env": {
+    "webextensions": true
+  },
+  "devDependencies": {
+    "jest": "^29.4.3"
+  }
+}
