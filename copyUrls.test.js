@@ -12,6 +12,7 @@ const someInvalidList = [
     "https://developer.mozilla.org/en-US/docs"
 ];
 
+// TODO: remember that this function's inputs are a List of URL objects.
 test('filtering words from wordslist works', () => {
     expect(filterBadWords(allValidList, sampleBadWords)).toBe(allValidList);
 
@@ -19,5 +20,5 @@ test('filtering words from wordslist works', () => {
         "https://jestjs.io/docs/getting-started",
         "https://developer.mozilla.org/en-US/docs"
     ];
-    expect(filterBadWords(someInvalidList, sampleBadWords)).toBe()
+    expect(filterBadWords(someInvalidList, sampleBadWords)).toBe(expectedFilteredList);
 })
